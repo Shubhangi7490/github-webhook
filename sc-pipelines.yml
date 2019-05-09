@@ -9,8 +9,8 @@ test:
     # Prepared for PCF DEV
     - name: github-rabbitmq
       type: broker
-      broker: a9s-rabbitmq
-      plan: standard
+      broker: a9s-rabbitmq37
+      plan: rabbitmq-single-big-ssl
     - name: github-eureka
       type: app
       coordinates: com.example.eureka:github-eureka:0.0.1.M1
@@ -21,8 +21,8 @@ stage:
   # Prepared for PCF DEV
     - name: github-rabbitmq
       type: broker
-      broker: a9s-rabbitmq
-      plan: standard
+      broker: a9s-rabbitmq37
+      plan: rabbitmq-single-big-ssl
     - name: github-eureka
       type: app
       coordinates: com.example.eureka:github-eureka:0.0.1.M1
