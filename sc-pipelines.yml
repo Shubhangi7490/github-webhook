@@ -9,7 +9,7 @@ test:
     # Prepared for PCF DEV
     - name: github-rabbitmq
       type: broker
-      broker: p-rabbitmq
+      broker: a9s-rabbitmq
       plan: standard
     - name: github-eureka
       type: app
@@ -21,7 +21,7 @@ stage:
   # Prepared for PCF DEV
     - name: github-rabbitmq
       type: broker
-      broker: p-rabbitmq
+      broker: a9s-rabbitmq
       plan: standard
     - name: github-eureka
       type: app
