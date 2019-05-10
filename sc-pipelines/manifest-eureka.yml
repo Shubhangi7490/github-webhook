@@ -3,6 +3,7 @@ applications:
 - name: github-eureka
   services:
     - github-rabbitmq
+    - github-splunk
   env:
     SPRING_PROFILES_ACTIVE: cloud
     DEBUG: "true"
