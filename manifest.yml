@@ -4,6 +4,7 @@ applications:
   services:
     - github-rabbitmq
     - github-eureka
+    - github-splunk
   env:
     SPRING_PROFILES_ACTIVE: cloud
     DEBUG: "true"
