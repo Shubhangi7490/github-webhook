@@ -2,6 +2,7 @@
 applications:
 - name: github-webhook
   services:
+    - github-rabbitmq
     - github-eureka
     - github-splunk
   env:
