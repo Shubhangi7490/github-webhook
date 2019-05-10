@@ -30,6 +30,13 @@ stage:
       type: broker
       broker: a9s-rabbitmq37
       plan: rabbitmq-single-big-ssl
+    - name: github-splunk
+      type: broker
+      broker: splunk
+      plan: HEC2.0
+      params:
+        retention_period: '10'
+        index_prefix: github
     - name: github-eureka
       type: app
       coordinates: com.example.eureka:github-eureka:0.0.1.M1
