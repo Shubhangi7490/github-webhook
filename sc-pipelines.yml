@@ -16,7 +16,7 @@ test:
       broker: splunk
       plan: HEC2.0
       params:
-        retention_period: 10
+        retention_period: '10'
         index_prefix: github
     - name: github-eureka
       type: app
